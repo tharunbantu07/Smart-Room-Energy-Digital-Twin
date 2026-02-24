@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Smart Room Digital Twin</title>
+  <style>
+    body { font-family: Arial; background: #f2f2f2; }
+    .room {
+      width: 300px;
+      height: 200px;
+      margin: auto;
+      background: lightblue;
+      text-align: center;
+      padding-top: 80px;
+      font-size: 20px;
+    }
+    .hot { background: orange; }
+  </style>
+</head>
+<body>
+
+<h2 align="center">Smart Room Energy & Comfort Digital Twin</h2>
+
+<div class="room" id="room">
+  Room Normal
+</div>
+
+<script>
+  // Simulated temperature input
+  let temperature = 32;
+
+  if (temperature > 30) {
+    document.getElementById("room").classList.add("hot");
+    document.getElementById("room").innerHTML = "Room Hot – AC ON";
+  }
+</script>
+
+</body>
+</html>
